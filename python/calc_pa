@@ -1,0 +1,31 @@
+print("Digite seu nome completo.")
+nome = input(">>")
+lista_nome = nome.split()
+if len(lista_nome) < 1:
+    print("Você precisa digitar um nome.")
+elif len(lista_nome) == 1:
+    print("Você precisa digitar seu(s) sobrenome(s).")
+else:
+    print("Digite a operação desejada")
+    op = input(">> ")
+    print("Digite o primeiro número.")
+    num1 = float(input(">> "))
+    print("Digite o segundo número.")
+    num2 = float(input(">> "))
+    if op == "+":
+	    print("O resultado é:", num1 + num2)
+    elif op == "-":
+	    print("O resultado é:", num1 - num2)
+    elif op == "*" or "x":
+        print("O resultado é:", num1 * num2)
+    elif op == "/":
+        print("O resultado é:", num1 / num)
+    print("Deseja fazer outro cálculo?")
+    fim = input(">> ")
+    if fim == "Sim" or fim == "sim":
+        pass
+    elif fim == "Não" or fim == "não" or fim == "Nao" or fim == "nao":
+        print("Até a próxima,",lista_nome[0].capitalize())
+    else:
+        print("Informação Inválida.")
+        
